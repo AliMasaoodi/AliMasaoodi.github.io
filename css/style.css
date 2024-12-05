@@ -53,6 +53,18 @@ table {
   display: block;
 }
 
+/*----------------Footer------------------*/
+.footer {
+  width: 100%; /* Make the footer span the full width */
+  clear: both; /* Ensure it starts on a new line */
+  background-color: #2b2b2b; /* Optional: Background color for visibility */
+  color: white; /* Optional: Text color */
+  text-align: center; /* Center-align the content */
+  padding: 20px 0; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+  position: relative; /* Keeps footer in the flow of the page */
+}
+
 /*-------------------navbar1----------------------------------*/
 
 .navbar1 {
