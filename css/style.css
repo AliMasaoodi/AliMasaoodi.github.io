@@ -336,29 +336,46 @@ p {
   margin-bottom: 2%;
 }
 
-.myimageinliner {
-  float: right;
-  border-radius: 50px;
-
-  height:auto;
-  width:54vh; 
-
-  padding-bottom: 0.2%;
-
-  /*margin-right: %;*/
-  margin-left: 3%; /*3%*/
-  margin-right: -5vh;
-  margin-bottom: 2%;
-  /*margin-top: -1%;*/
-  margin-top: 2%;
-  
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.267); 
-}
-
 .textinline {
   margin-left: 50vh;
 }
 
+/*--------------------About ME--------------------------*/
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Default: text on the left, image on the right */
+  align-items: center; /* Aligns text and image vertically */
+  gap: 16px; /* Space between text and image */
+}
+
+.myimageinliner {
+  max-width: 30%; /* Adjust image size as needed */
+  height: auto; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent image from shrinking */
+  border-radius: 25px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.267); 
+}
+
+.textinlineabout {
+  flex: 1; /* Text takes remaining space */
+  font-size: 15px;
+  margin-top: 4%;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center items */
+  }
+
+  .myimageinliner {
+    max-width: 80%; /* Scale image for smaller screens */
+    margin-bottom: 16px; /* Add spacing between image and text */
+  }
+}
+
+/*--------------------Old About ME--------------------------*/
+/* 
 .textinlineabout{
   font-size:14pt;
   margin-left: 5vw;
@@ -366,6 +383,22 @@ p {
   margin-top: 4%;
   overflow:unset;
 }
+
+.myimageinliner {
+  float: right;
+  border-radius: 50px;
+  height:auto;
+  width:54vh; 
+  padding-bottom: 0.2%;
+  margin-left: 3%;
+  margin-right: -5vh;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.267); 
+} 
+  */
+/*---------------------------------------------*/
+
 .content {
   width: 95%; /*original 1000px = 66%, my 1020px*/
   margin: 0 auto;
