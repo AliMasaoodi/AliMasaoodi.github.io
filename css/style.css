@@ -340,6 +340,19 @@ p {
   margin-left: 50vh;
 }
 
+
+.imageinliner-pub {
+  max-width: 10%; /* Scales the image to fit its container */
+  height: auto;    /* Maintains the aspect ratio */
+
+  float: right;
+  border-radius: 75px;
+  height:auto;
+  padding-bottom: 0.1%;
+  margin-left: 3%;
+  margin-top: -3%;
+  margin-bottom: 2%;
+}
 /*--------------------About ME--------------------------*/
 .flex-container {
   display: flex;
@@ -354,12 +367,21 @@ p {
   flex-shrink: 0; /* Prevent image from shrinking */
   border-radius: 25px;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.267); 
+  margin-top: 2%;
 }
 
 .textinlineabout {
   flex: 1; /* Text takes remaining space */
   font-size: 15px;
   margin-top: 4%;
+
+  /**********************New added*********************************/
+
+  max-width: 800px; /* Set a comfortable maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add padding for smaller screens */
+  text-align: left; /* Optional: Align text to the left */
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -478,10 +500,12 @@ p {
   max-width: 50%; /*100%*/
   height: auto;
   font-size: 5vmin;
-  text-shadow: 1px 1px #ffffff71;
+  font-style: italic;
+  text-shadow: 1px 1px #ffffff70;
   object-fit: ;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
   border:1px solid rgba(218, 241, 115, 0.13);
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .abouttitle2 {}
@@ -491,6 +515,8 @@ p {
        -o-transform: translateX(50px);
           transform: translateX(50px);
 }
+
+/*---------------------------------------*/
 /*---------------------------------------*/
 .navtitle{
   font-size: 16pt;
@@ -733,6 +759,21 @@ p {
   top: 128px;
   right: 30px;
   background-color: transparent;
+}
+
+.button {
+  padding: 15px;
+  background-color: #363636;
+  color: white;
+  text-decoration: none;
+  font-family: Oswald;
+  letter-spacing: 1px;
+  background-color: rgba(194, 29, 40, 0.512); /*Red: rgba(197, 14, 25, 0.7)*/
+  -webkit-transition: background-color .15s 0s linear;
+  -moz-transition: background-color .15s 0s linear;
+  -ms-transition: background-color .15s 0s linear;
+  -o-transition: background-color .15s 0s linear;
+  transition: background-color .15s 0s linear;
 }
 
 .cta {
