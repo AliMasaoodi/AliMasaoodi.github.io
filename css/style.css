@@ -468,7 +468,9 @@ p {
   -webkit-backface-visibility: hidden;
   z-index: 99;
   position: relative;
-  margin-left: 27%;
+  margin-left: 10%;
+  margin-left: 10%;
+
   /*left: 50px;*/
   opacity: 0;
   -webkit-transition: -webkit-transform 1s ease;
@@ -495,14 +497,14 @@ p {
   background: linear-gradient(45deg, #e73c7e92, #23a5d5ae, #23d5ab92, #ffffff82);
   /*  background: rgb(255, 255, 255) linear-gradient(45deg, #e73c7e14, #23a5d5a0, #23d5ab7c, #ffffff72);*/
   padding: 15px 13px 15px 20px;
-  border-radius: 0% 30% 10% 30%;
+  border-radius: 5% 30% 10% 30%;
   box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.348);
-  max-width: 50%; /*100%*/
+  max-width: 80%; /*100%*/
   height: auto;
   font-size: 5vmin;
   font-style: italic;
   text-shadow: 1px 1px #ffffff70;
-  object-fit: ;
+  /* object-fit: ; */
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
   border:1px solid rgba(218, 241, 115, 0.13);
   font-family: Verdana, Geneva, Tahoma, sans-serif
