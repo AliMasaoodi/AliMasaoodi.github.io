@@ -65,7 +65,7 @@ table {
   position: relative; /* Keeps footer in the flow of the page */
 }
 
-/*-------------------navbar1----------------------------------*/
+/*-------------------navbar1 New ------------------------------*/
 
 .navbar1 {
   float: none;
@@ -92,8 +92,11 @@ table {
   color: #f2f2f2f5; /*f2f2f2ea. f2f2f2 white*/
   text-align: left;
   padding: 5px 16px; /*style="padding: 1px 1px;"*/
-  text-decoration: none;
-  font-size: 16pt; /*font-size: 23px;*//*choose 17 if position: fixed*/ 
+
+  text-decoration: none; /* Remove underlines from menu links */
+  font-size: 2vw; /*1.5vw; /* Responsive font size */
+  padding: 5px 2%; /* Adjust padding for responsiveness */
+
   /*--------------To Make Buttons 3D !---------------------------------*/
   /*border-radius: 10%;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
@@ -124,12 +127,109 @@ table {
   text-decoration: none;
   font-size: 16pt;
 }
+
+.navbarsocial img {
+  width: 5vw; /* Proportional size for images */
+  max-width: 40px; /* Limit the maximum size */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .navbarsocial img:hover {
 border: #23d5ab;
 border-style: double;
 border-radius: 50%;
 }
 
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar1 a {
+    font-size: 4vw; /* Increase font size for better readability on small screens */
+    padding: 5px 5%; /* Adjust padding */
+  }
+  .navbarsocial img {
+    width: 8vw; /* Smaller images on mobile */
+    max-width: 30px;
+  }
+}
+
+/* Optional: Limit extreme shrinking for very large screens */
+@media (min-width: 1200px) {
+  .navbar1 a {
+    font-size: 18px; /* Fixed font size for ultra-wide screens */
+  }
+  .navbarsocial img {
+    width: 3vw;
+    max-width: 50px;
+  }
+}
+
+/*-------------------navbar1 Old----------------------------------*/
+/*
+.navbar1 {
+  float: none;
+  overflow: hidden;
+  position: relative; // choose [fixed] to make navigate with scrolling
+  //left:5px ;
+  width: 100%;
+  text-align: left;
+  background-color: transparent; //rgba(197, 14, 26, 0); //rgba(197, 14, 25, 0.7);
+  border-radius: 5%;
+  color: white;
+  text-decoration: none;
+  font-family: Oswald;
+  letter-spacing: 0px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
+  text-shadow: 1px 0px 5px rgba(33, 33, 33, 0.795);
+  //margin-left: %;
+  z-index: 1;
+}
+
+.navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2f5; //f2f2f2ea. f2f2f2 white
+  text-align: left;
+  padding: 5px 16px; //style="padding: 1px 1px;"
+  text-decoration: none;
+  font-size: 16pt; //font-size: 23px;//choose 17 if position: fixed 
+  
+  //--------------To Make Buttons 3D !---------------------------------
+  //border-radius: 10%;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
+  background: linear-gradient(45deg, #e73c7e52, #23a5d5ae, #23d5ab92, #ffffff82);
+  margin: 1pt;
+  //border:1px solid rgba(218, 241, 115, 0.13);
+}
+
+.navbar1 a:hover {
+  //-------Original---------
+  background: #ddd;
+  color: black;
+  ------------------------
+  border-radius: 10%;
+  //box-shadow: 0 0 11px rgba(33, 33, 33, 0.884); 
+  background: rgba(221, 221, 221, 0.445);
+  color: rgb(49, 87, 142); //color: rgba(0, 0, 0, 0.651);
+  text-shadow: 1px 0px 1px rgba(33, 33, 33, 0.678);; //none
+}
+
+.navbarsocial a {
+  float: left;
+  display: block;
+  color: #f2f2f2f5; //f2f2f2ea. f2f2f2 white
+  text-align: left;
+  padding: 5px 4px; //style="padding: 1px 1px;"
+  text-decoration: none;
+  font-size: 16pt;
+}
+.navbarsocial img:hover {
+border: #23d5ab;
+border-style: double;
+border-radius: 50%;
+}
+*/
+/*-------------------------*/
 .navbar2 {
 
   background: transparent;/*linear-gradient(45deg, #e73c7e52, #23a5d5ae, #23d5ab92, #ffffff82);*/
@@ -770,7 +870,7 @@ p {
   text-decoration: none;
   font-family: Oswald;
   letter-spacing: 1px;
-  background-color: rgba(194, 29, 40, 0.512); /*Red: rgba(197, 14, 25, 0.7)*/
+  /* background-color: rgba(194, 29, 40, 0.512); /*Red: rgba(197, 14, 25, 0.7) */
   -webkit-transition: background-color .15s 0s linear;
   -moz-transition: background-color .15s 0s linear;
   -ms-transition: background-color .15s 0s linear;
