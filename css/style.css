@@ -91,11 +91,10 @@ table {
   display: block;
   color: #f2f2f2f5; /*f2f2f2ea. f2f2f2 white*/
   text-align: left;
-  padding: 5px 16px; /*style="padding: 1px 1px;"*/
-
   text-decoration: none; /* Remove underlines from menu links */
-  font-size: 2vw; /*1.5vw; /* Responsive font size */
-  padding: 5px 2%; /* Adjust padding for responsiveness */
+  font-size: 130%; /*1.5vw; /* Responsive font size */
+  /* padding: 5px 2%; //Adjust padding for responsiveness  */
+  padding: 1px 1%; 
 
   /*--------------To Make Buttons 3D !---------------------------------*/
   /*border-radius: 10%;
@@ -119,17 +118,18 @@ table {
 
 
 .navbarsocial a {
-  float: left;
-  display: block;
+  display: flex;
+  /* display: block; */
+  float: right;
   color: #f2f2f2f5; /*f2f2f2ea. f2f2f2 white*/
   text-align: left;
-  padding: 5px 4px; /*style="padding: 1px 1px;"*/
+  padding: 1px 1px; /*style="padding: 1px 1px;"*/
   text-decoration: none;
-  font-size: 16pt;
+  /* font-size: 16pt; */
 }
 
 .navbarsocial img {
-  width: 5vw; /* Proportional size for images */
+  width: 3vw; /* Proportional size for images */
   max-width: 40px; /* Limit the maximum size */
   height: auto; /* Maintain aspect ratio */
 }
@@ -141,28 +141,6 @@ border-radius: 50%;
 }
 
 
-/* Styles for smaller screens */
-@media (max-width: 768px) {
-  .navbar1 a {
-    font-size: 4vw; /* Increase font size for better readability on small screens */
-    padding: 5px 5%; /* Adjust padding */
-  }
-  .navbarsocial img {
-    width: 8vw; /* Smaller images on mobile */
-    max-width: 30px;
-  }
-}
-
-/* Optional: Limit extreme shrinking for very large screens */
-@media (min-width: 1200px) {
-  .navbar1 a {
-    font-size: 18px; /* Fixed font size for ultra-wide screens */
-  }
-  .navbarsocial img {
-    width: 3vw;
-    max-width: 50px;
-  }
-}
 
 /*-------------------navbar1 Old----------------------------------*/
 /*
