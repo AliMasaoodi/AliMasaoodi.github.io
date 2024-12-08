@@ -571,8 +571,10 @@ p {
   -webkit-backface-visibility: hidden;
   z-index: 99;
   position: relative;
-  margin-left: 10%;
-  margin-left: 10%;
+  /* margin-left: 10%;
+  margin-left: 10%; */
+  padding-left: 0%;
+  padding-right: 0%;
 
   /*left: 50px;*/
   opacity: 0;
