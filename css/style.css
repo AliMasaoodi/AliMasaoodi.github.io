@@ -64,6 +64,14 @@ table {
   box-sizing: border-box; /* Ensure padding does not affect width */
   position: relative; /* Keeps footer in the flow of the page */
 }
+/*----------------Main button in navbar1 (Ali Masaoodi)------------------*/
+.seo-hidden {
+  position: absolute;
+  left: -9999px;  /* Move the element far off-screen */
+  width: 1px;     /* Collapse its visible size */
+  height: 1px;    /* Collapse its visible size */
+  overflow: hidden;
+}
 
 /*-------------------navbar1 New ------------------------------*/
 
@@ -94,7 +102,8 @@ table {
   text-decoration: none; /* Remove underlines from menu links */
   font-size: 130%; /*1.5vw; /* Responsive font size */
   /* padding: 5px 2%; //Adjust padding for responsiveness  */
-  padding: 1px 1%; 
+  padding: 1px 2%; 
+
 
   /*--------------To Make Buttons 3D !---------------------------------*/
   /*border-radius: 10%;
@@ -103,6 +112,12 @@ table {
   margin: 1pt;*/
   /*border:1px solid rgba(218, 241, 115, 0.13);*/
 }
+
+.about-button {
+  margin-left: 10px; /* Adds 20px of space from the left */
+}
+
+
 
 .navbar1 a:hover {
   /*-------Original---------
@@ -575,6 +590,9 @@ p {
   display: block;
   justify-content: center; /* Centers horizontally */
   align-items: center;    /* Centers vertically */
+
+  /* margin-left: 10%; // an approach 
+  margin-left: 10%; */
 
   /*left: 50px;*/
   opacity: 0;
