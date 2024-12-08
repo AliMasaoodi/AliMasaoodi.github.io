@@ -129,7 +129,7 @@ table {
 }
 
 .navbarsocial img {
-  width: 3vw; /* Proportional size for images */
+  width: 100%; /* 3vw/* Proportional size for images */
   max-width: 40px; /* Limit the maximum size */
   height: auto; /* Maintain aspect ratio */
 }
@@ -141,6 +141,31 @@ border-radius: 50%;
 }
 
 
+/* Styles for smaller screens:
+/*
+@media (max-width: 768px) {
+  .navbar1 a {
+    font-size: 4vw; /* Increase font size for better readability on small screens 
+    padding: 1px 2%; /* Adjust padding 
+  }
+  .navbarsocial img {
+    width: 8vw; /* Smaller images on mobile 
+    max-width: 30px;
+  }
+}
+
+/* Optional: Limit extreme shrinking for very large screens :
+
+@media (min-width: 1200px) {
+  .navbar1 a {
+    font-size: 20px; /* Fixed font size for ultra-wide screens 
+  }
+  .navbarsocial img {
+    width: 3vw;
+    max-width: 40px;
+  }
+}
+*/
 
 /*-------------------navbar1 Old----------------------------------*/
 /*
