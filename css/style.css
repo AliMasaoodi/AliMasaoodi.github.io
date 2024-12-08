@@ -571,10 +571,10 @@ p {
   -webkit-backface-visibility: hidden;
   z-index: 99;
   position: relative;
-  /* margin-left: 10%;
-  margin-left: 10%; */
-  padding-left: 0%;
-  padding-right: 0%;
+  margin: 0;
+  display: block;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
 
   /*left: 50px;*/
   opacity: 0;
@@ -599,8 +599,7 @@ p {
 .abouttitle h1,
 .abouttitle h2,
 .abouttitle h3 {
-  background: linear-gradient(45deg, #e73c7e92, #23a5d5ae, #23d5ab92, #ffffff82);
-  /*  background: rgb(255, 255, 255) linear-gradient(45deg, #e73c7e14, #23a5d5a0, #23d5ab7c, #ffffff72);*/
+  background: linear-gradient(45deg, #e73c7e92, #23a5d5ae, #23d5ab92, #ffffff82);  /*  background: rgb(255, 255, 255) linear-gradient(45deg, #e73c7e14, #23a5d5a0, #23d5ab7c, #ffffff72);*/
   padding: 15px 13px 15px 20px;
   border-radius: 5% 30% 10% 30%;
   box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.348);
