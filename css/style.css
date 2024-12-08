@@ -92,6 +92,7 @@ table {
   text-shadow: 1px 0px 5px rgba(33, 33, 33, 0.795);
   /*margin-left: %;*/
   z-index: 1;
+
   margin-top: 8px;
 }
 
@@ -115,7 +116,7 @@ table {
 }
 
 .about-button {
-  margin-left: 50px; /* Adds 20px of space from the left */
+  margin-left: 5px; /* Adds 20px of space from the left */
 }
 
 
@@ -265,7 +266,7 @@ border-radius: 50%;
   /* box-shadow: 0 0 11px rgba(33, 33, 33, 0.884);  */
   /* text-shadow: 1px 0px 5px rgba(33, 33, 33, 0.795); */
   z-index: 1;
-  margin-top: 8px;
+  margin-top: 5px; /*8*/
 }
 
 .navbar1-so a {
@@ -297,17 +298,23 @@ border-radius: 50%;
   display: flex;
   /* display: block; */
   float: right;
-  color: #f2f2f2f5; f2f2f2ea. f2f2f2 white
+  color: #f2f2f2f5; 
   text-align: left;
   padding: 1px 1px; /*style="padding: 1px 1px;"*/
   text-decoration: none;
   /* font-size: 16pt; */
+  margin-right: 10px; ;
+
 }
 
 .navbarsocial-so img {
   width: 100%; /* 3vw/* Proportional size for images */
   max-width: 30px; /* Limit the maximum size */
   height: auto; /* Maintain aspect ratio */
+  /* box-shadow: 1px 0px 0px 1px rgba(2, 69, 68, 0.899); */
+  padding: 0px; /* Adds inner spacing */
+  /* background-color: #6df7ce7b;  */
+  border-radius: 10px; /* Curves the edges of the box */
 }
 
 .navbarsocial-so img:hover {
