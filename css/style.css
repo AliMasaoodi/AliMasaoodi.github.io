@@ -1431,7 +1431,16 @@ h1 {
   border-radius: 75px;
   transition: 1s box-shadow;
 }
-
+/*-------------------hoverneff for arrow up-----------------*/
+.hoverneff {
+  display: flex;
+  position: relative;
+  /* padding: 12px; */
+  /*background: rgba(255, 255, 255, 0.568);*/
+  background: linear-gradient(-45deg, #ee765267, #e73c7e3f, #23a5d546, #23d5ab4d, #ffffff7e);
+  border-radius: 75px;
+  transition: 1s box-shadow;
+}
 /*-------------------hovern-----------------*/
 .hovern {
   display: flexbox;
